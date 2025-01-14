@@ -40,7 +40,7 @@ UPDATE gender
 SET id = 1
 WHERE gender = 'Mrs.';
 
-	-- Add now a constraint with the name fk_person2gender and
+	-- c. Add now a constraint with the name fk_person2gender and
 	-- set the gender as a FOREIGN KEY from the table person which REFERENCES to the id from gender.
     -- Please use RESTRICT for UPDATE & DELETE!
 
