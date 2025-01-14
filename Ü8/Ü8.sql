@@ -26,6 +26,10 @@ ADD COLUMN tel_company VARCHAR(40);
 ALTER TABLE person
 ADD COLUMN url VARCHAR(45);
 
+SELECT *
+FROM person
+;
+
     -- f. Add a constraint with the name fk_person2zip_company and
 		-- set the zip_company_id as a FOREIGN KEY from the table person which REFERENCES to the id from zip. 
         -- Please use RESTRICT for UPDATE & DELETE!
@@ -34,12 +38,15 @@ ALTER TABLE person
 ADD CONSTRAINT fk_person2zip_company
 FOREIGN KEY (zip_company_id)
 REFERENCES zip(ID)
-	ON DELETE RESTRICT
-    ON UPDATE RESTRICT;
+ON DELETE RESTRICT
+ON UPDATE RESTRICT;
 
 --------------------------------------------------------------------------------------------
 2. Your Marketing Manages is saying that all your datasets in your table person are so called SOHOs (Small Office / Home Office).
 --------------------------------------------------------------------------------------------
+SELECT *
+FROM person
+;
 	-- a. That’s why he wants you to fill the new fields (1b till 1d) with the existing private information 
 		-- (e.g. the address of the company is the same like the private).
 
