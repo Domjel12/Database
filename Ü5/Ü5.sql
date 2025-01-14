@@ -1,5 +1,7 @@
 -- Exercise 5
+--------------------------------------------------------------------------------------------
 1.	Your colleague from the marketing team needs some analysis. 
+--------------------------------------------------------------------------------------------
 /* a)	*/
 SELECT left(zip_code, 2) AS ZIP_short, count(*) AS qty
 FROM zip
