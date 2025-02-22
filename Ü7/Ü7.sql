@@ -49,15 +49,6 @@ CREATE TABLE gender
 INSERT INTO gender (gender)
 VALUES ('Mrs.'), ('Mr.')
 ;
--- works fine, but if we look at the ids ...
-
-SELECT *
-FROM gender
-;
-
-TRUNCATE TABLE gender;
-
--- .. so we have to change the ids :)
 
 UPDATE gender
 SET id = 0
